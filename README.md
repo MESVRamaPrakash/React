@@ -38,42 +38,42 @@ Then scan the QR code using the Expo Go app on your phone.
 1. View
 A container that acts like a <div> in HTML. Used for layout.
 ✅ Syntax:
-```js <View style={...}> ... </View>```
+```<View style={...}> ... </View>```
 
 2. Text
 Used to display text on the screen.
 ✅ Syntax:
-<Text style={...}>Hello World</Text>
+```<Text style={...}>Hello World</Text>```
 
 3. StatusBar
 Used to style the top status bar (time, battery etc.)
 ✅ Syntax:
-<StatusBar barStyle="light-content" />
+```<StatusBar barStyle="light-content" />```
 
 4. StyleSheet
 Helps write and organize CSS-like styles.
 ✅ Syntax:
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+```const styles = StyleSheet.create({```
+  ```container: {```
+    ```flex: 1,```
+    ```backgroundColor: '#000',```
+    ```alignItems: 'center',```
+    ```justifyContent: 'center',```
+  ```},```
+```});```
 
 5. Dimension
 It gives the width of any screen or window
 ✅ Syntax:
-import {Dimensions} from 'react-native';
-const screenWidth = Dimensions.get("window").width;
+```import {Dimensions} from 'react-native';```
+```const screenWidth = Dimensions.get("window").width;```
 We can use this screenWidth variable for the width or else we can also use 80% width to get more responsive
 
 ✅ Complete Day 1 Example Code
-import React from 'react';
-import { View, Text, StatusBar, StyleSheet } from 'react-native';
+```import React from 'react';```
+```import { View, Text, StatusBar, StyleSheet } from 'react-native';```
 
-export default function App() {
+```export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
-});
+});```
 
 🧠 Useful Commands Recap
 Action	Command
