@@ -53,16 +53,19 @@ Used to style the top status bar (time, battery etc.)
 4. StyleSheet
 Helps write and organize CSS-like styles.
 ✅ Syntax:
-```const styles = StyleSheet.create({```
-  ```container: {```
-    ```flex: 1,```
-    ```backgroundColor: '#000',```
-    ```alignItems: 'center',```
-    ```justifyContent: 'center',```
-  ```},```
-```});```
+ ```
+ const styles = StyleSheet.create({
+   container: {
+    flex: 1,
+    backgroundColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'center',
+   },
+});
 
-5. Dimension
+```
+
+6. Dimension
 It gives the width of any screen or window
 ✅ Syntax:
 ```import {Dimensions} from 'react-native';```
@@ -70,10 +73,12 @@ It gives the width of any screen or window
 We can use this screenWidth variable for the width or else we can also use 80% width to get more responsive
 
 ✅ Complete Day 1 Example Code
-```import React from 'react';```
-```import { View, Text, StatusBar, StyleSheet } from 'react-native';```
+```
 
-```export default function App() {
+import React from 'react';
+import { View, Text, StatusBar, StyleSheet } from 'react-native';
+
+export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
@@ -94,7 +99,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
-});```
+});
+```
 
 🧠 Useful Commands Recap
 Action	Command
