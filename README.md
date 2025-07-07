@@ -38,7 +38,7 @@ Then scan the QR code using the Expo Go app on your phone.
 1. View
 A container that acts like a <div> in HTML. Used for layout.
 ✅ Syntax:
-"<View style={...}> ... </View>"
+```js <View style={...}> ... </View>```
 
 2. Text
 Used to display text on the screen.
